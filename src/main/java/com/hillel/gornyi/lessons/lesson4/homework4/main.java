@@ -16,7 +16,7 @@ public class main {
          int archerMing = 35;
          int knightMing = 12;
          double armyMing = 1.5 * armyLee;
-         double damageMing = (warriorMing + archerMing + knightMing) * archerMing;
+         double damageMing = (warriorMing + archerMing + knightMing) * armyMing;
          System.out.println("Ming's army damage per second: " + damageMing);
 
          System.out.println();
