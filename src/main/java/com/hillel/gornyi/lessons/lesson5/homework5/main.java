@@ -1,23 +1,64 @@
 package com.hillel.gornyi.lessons.lesson5.homework5;
 
+import java.util.Scanner;
+
 public class main {
     public static void main(String[] args) {
-        String team1 = "mTw";
-        int player1 = 22;
-        int player2 = 20;
-        int player3 = 14;
-        int player4 = 11;
-        int player5 = 5;
 
-        String team2 = "SK Gaming";
-        int player6 = 31;
-        int player7 = 17;
-        int player8 = 15;
-        int player9 = 7;
-        int player10 = 6;
+        Scanner scanner = new Scanner(System.in);
 
-        double team1AverFrags = (player1 + player2 + player3 + player4 + player5)/5;
-        double team2AverFrags = (player6 + player7 + player8 + player9 + player10)/5;
+        // TEAM 1 NAME AND STATS
+
+        System.out.println("Введіть назву першої команди:");
+        String team1 = scanner.nextLine();
+        System.out.println("Назва першої команди - " + team1);
+
+        System.out.println("Введіть по черзи кількість фрагів кожного гравця команди " + team1);
+        scanner.hasNextInt();
+        int player1 = scanner.nextInt();
+        System.out.println("Перший гравець команди " + team1 + " має " + player1 + " фрагів");
+        scanner.hasNextInt();
+        int player2 = scanner.nextInt();
+        System.out.println("Другий гравець команди " + team1 + " має " + player2 + " фрагів");
+        scanner.hasNextInt();
+        int player3 = scanner.nextInt();
+        System.out.println("Третій гравець команди " + team1 + " має " + player3 + " фрагів");
+        scanner.nextLine();
+        int player4 = scanner.nextInt();
+        System.out.println("Четвертий гравець команди " + team1 + " має " + player4 + " фрагів");
+        scanner.hasNextInt();
+        int player5 = scanner.nextInt();
+        System.out.println("П'ятий гравець команди " + team1 + " має " + player5 + " фрагів");
+        scanner.nextLine();
+
+        // TEAM 2 NAME AND STATS
+
+        System.out.println("Введіть назву другої команди:");
+        String team2 = scanner.nextLine();
+        System.out.println("Назва другої команди - " + team2);
+
+        System.out.println("Введіть по черзи кількість фрагів кожного гравця команди " + team2);
+        scanner.hasNextInt();
+        int player6 = scanner.nextInt();
+        System.out.println("Перший гравець команди " + team2 + " має " + player6 + " фрагів");
+        scanner.hasNextInt();
+        int player7 = scanner.nextInt();
+        System.out.println("Перший гравець команди " + team2 + " має " + player7 + " фрагів");
+        scanner.hasNextInt();
+        int player8 = scanner.nextInt();
+        System.out.println("Перший гравець команди " + team2 + " має " + player8 + " фрагів");
+        scanner.nextLine();
+        int player9 = scanner.nextInt();
+        System.out.println("Перший гравець команди " + team2 + " має " + player9 + " фрагів");
+        scanner.hasNextInt();
+        int player10 = scanner.nextInt();
+        System.out.println("Перший гравець команди " + team2 + " має " + player10 + " фрагів");
+        scanner.nextLine();
+
+        // AVERAGE FRAGS OF BOTH TEAMS
+
+        double team1AverFrags = ((double) (player1 + player2 + player3 + player4 + player5)/5);
+        double team2AverFrags = ((double) (player6 + player7 + player8 + player9 + player10)/5);
 
 //        System.out.println(team1AverFrags);
 //        System.out.println(team2AverFrags);
