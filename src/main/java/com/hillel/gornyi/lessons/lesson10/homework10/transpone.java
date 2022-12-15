@@ -66,10 +66,10 @@ public class transpone {
                 for (int j = 0; j < N; j++) {
                     System.out.printf("%3d", mx1[i][j]);
                 }
-                System.out.println();
-                System.out.println();
-                System.out.println("------------------------");
             }
+            System.out.println();
+            System.out.println();
+            System.out.println("------------------------");
 
         // Transposing-transposing and will be transposed
 
