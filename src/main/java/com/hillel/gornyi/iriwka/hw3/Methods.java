@@ -28,7 +28,7 @@ public class Methods {
         }
         return action;
     }
-    public static int calc(int num1, char action, int num2) {
+    public static int calc(int num1, int num2, char action) {
         switch (action) {
             case '+':
                 result = num1 + num2;
@@ -42,14 +42,10 @@ public class Methods {
             case '/':
                 result = num1 / num2;
                 break;
+            default:
+                System.out.println("Error! You entered incorrect action sign! Try again");
+                result = calc(num1, num2, getOperation());
         }
         return result;
     }
 }
-// Метод int getInt() - должен считывать с консоли целое число и возвращать его
-// Метод char getOperation() - должен считывать с консоли какое-то значение
-// и возвращать символ с операцией (+, -, * или /)
-// Метод int calc(int num1, int num2, char operation)
-// - должен выполнять над числами num1 и num2 арифметическую операцию, заданную operation.
-// Метод main() - должен считывать 2 числа (с помощью getInt()),
-// считать операцию (с помощью getOperation(), передать все методу calc() и вывести на экран результат.
